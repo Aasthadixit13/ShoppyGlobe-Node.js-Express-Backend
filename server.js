@@ -1,7 +1,9 @@
 require('dotenv').config();
 const express = require('express');
+const cors = require('cors');
+
 const connectDB = require('./config/db');
-require('express-async-errors');
+
 
 const productRoutes = require('./routes/productRoutes');
 const cartRoutes = require('./routes/cartRoutes');
